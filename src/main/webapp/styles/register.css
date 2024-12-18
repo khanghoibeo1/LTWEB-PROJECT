@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains", sans-serif;
+}
+body {
+    background-image: url('https://inngochuong.com/uploads/images/mau-san-pham/mau-backgroud-dep-don-gian/mau-background.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0; /* Đặt margin của body về 0 để không có khoảng trắng xung quanh */
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.img-bg {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.img-bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.register-container {
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190628/ourmid/pngtree-simple-pink-background-material-image_267726.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 45%; /* Sửa đổi ở đây */
+    height: 150%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box; /* Để padding không làm tăng kích thước thực của container */
+}
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 50%;
+}
+
+.title-page {
+  font-weight: 700;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #c0a37b;
+}
+
+.input-form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-top:10px;
+  color: #607d8b;
+}
+
+.input-form label span {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.gender-options {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.gender-options label {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.gender-options label:first-child {
+  margin-right: 10px;
+}
+
+
+.input-form label input[value="female"] {
+  margin-right: 20px; /* Điều chỉnh giá trị để dịch chuyển sang phải hoặc trái */
+}
+
+.input-form label input[value="other"] {
+  margin-right: 6.5px; /* Điều chỉnh giá trị để dịch chuyển sang phải hoặc trái */
+}
+.input-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 3px;
+  outline: none;
+  border: 1px solid #607d8b;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #607d8b;
+  background: transparent;
+  border-radius: 30px;
+}
+
+.input-form input[type="submit"],
+.input-form input[type="button"] {
+  background: #c0a37b;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
+    0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12),
+    0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.input-form input[type="submit"]:hover,
+.input-form input[type="button"]:hover {
+  background: #6c5638;
+}
+
+.input-form span {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 3px;
+}
+
+.indicator {
+  height: 10px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+}
+
+.indicator span {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: lightgrey;
+  border-radius: 5px;
+}
+
+.indicator span:nth-child(2) {
+  margin: 0 3px;
+}
+
+.indicator span.active:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.indicator span.weak:before {
+  background-color: #ff4757;
+}
+
+.indicator span.medium:before {
+  background-color: orange;
+}
+
+.indicator span.strong:before {
+  background-color: #23ad5c;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 500;
+  display: none;
+  margin-bottom: -10px;
+  text-align: center;
+}
+
+.text.weak {
+  color: #ff4757;
+}
+
+.text.medium {
+  color: orange;
+}
+
+.text.strong {
+  color: #23ad5c;
+}
+.error-message {
+    color: #c62828; /* Màu đỏ */
+    font-size: 14px;
+    margin-top: 5px;
+}
+.additional-text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #607d8b;
+}
+
+.additional-text a {
+    color: #c0a37b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.additional-text a:hover {
+    text-decoration: underline;
+}
+.input-form input[type="text"],
+.input-form input[type="password"],
+.input-form input[type="date"],
+.input-form input[type="tel"] {
+    background-color: #FAF0E6; /* Màu hồng nhạt */
+    /* Các thuộc tính CSS khác nếu cần thiết */
+}
+
+
+.register_form #username_error,
+.register_form #pass_error,
+.register_form #birthday_error,
+.register_form #conpass_error,
+.register_form #email_error,
+.register_form #phone_error {
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 18px;
+  color: #c62828;
+  background: rgba(255, 0, 0, 0.1);
+  text-align: center;
+  padding: 8px 8px;
+  border-radius: 30px;
+  border: 1px solid #ef9a9a;
+  display: none;
+}

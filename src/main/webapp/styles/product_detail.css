@@ -1,0 +1,128 @@
+/* Reset CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout cho product_detail.jsp */
+.product-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product-info {
+    margin-left: 20px;
+}
+
+.product-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #008000;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.add-to-cart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+    background-color: #0056b3;
+}
+
+/* Layout cho phần feedback */
+.feedback_section {
+    margin-top: 50px;
+}
+
+.feedback_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Phân chia khoảng trắng đều giữa các phần tử */
+}
+
+.feedback_item {
+    flex: 0 0 48%; /* Hiển thị 2 cột trên mỗi dòng */
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước thực của phần tử */
+}
+
+.customer_name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.feedback_text {
+    color: #666;
+}
+
+.feedback_form {
+    margin-top: 30px;
+}
+
+.feedback_form h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.feedback_form form {
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.btn-primary {
+    background-color: #e44d26;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+}
